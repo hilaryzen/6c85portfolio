@@ -22,7 +22,7 @@
 			<h2>Reading & Critique</h2>
 
 			<figure>
-				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" width="500" alt="" />
 			</figure>
 
 			<p>
@@ -32,7 +32,7 @@
 			<ul>
 				<li>The jump in new Covid cases from late December 2021 to early January 2022 (the end of the current data in the visualization) is much steeper than any previous increase or peak.</li>
 				<li>In 2021, the number of new cases was at its lowest in the summer months (May - early July), but began increasing throughout August and peaked in September, perhaps due to schools and college reopening for everyone. Although I believe the lockdown was not as strict in summer 2021, people were still not traveling as they normally would during summer.</li>
-				<li>Although the number of cases in December 2021 appears to be lower than in December 2020, new cases only slightly increased in January 2021. Meanwhile, cases in January 2022 are already about double the number in mid-December 2021, showing the much more contagious nature of Omnicron and how recent this spike in cases is.</li>
+				<li>Although the number of cases in December 2021 appears to be lower than in December 2020, new cases only slightly increased in January 2021. Meanwhile, cases in January 2022 are already about double the number in mid-December 2021, showing the much more contagious nature of Omicron and how recent this spike in cases is.</li>
 			</ul>
 
 			<p>
@@ -56,9 +56,9 @@
 			<h2>Visualization Sketches</h2>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="A3Sketch3.jpeg" alt="" width="500" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    The 7-day average of new Covid-19 cases is graphed along a spiral timeline, with peaks and troughs labeled with the 7-day average on the corresponding day. The appearance of Omicron in the US in December 2021 is also annotated.
 				</figcaption>
 			</figure>
 
@@ -67,15 +67,16 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
-			</ul>
+				<li>I initially thought of adding numeric labels on the month axis of the original visualization, but decided that it could easily clutter the graph and distract readers. Instead, the most important questons for me focused on comparing new case numbers between peaks, so I removed the bottom half of the shaded area and added labels for the most important peaks and lowest points.</li>
+				<li>I left the area under the curve unshaded to draw attention to the labeled points and allow viewers to easily see where the labels correspond to.</li>
+				<li>I used a new color (blue) to annotate when Omicron appeared in the United States. Other important context like when lockdown restrictions began and ended could also be added.</li>
+                <li>Both of my January peak labels interrupted the year labels; it may be more effective to increase the spacing between 2021 and 2022 and add the numeric labels at the top of the curve. This would also allow shading the area under the curve, which helps viewers see peaks at a glance.</li>
+            </ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="A3Sketch1.jpeg" width="600" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    The 7-day average of new Covid-19 cases across 2020, 2021, and early January 2022 are graphed on separate lines, with an arrow to annotate when Omicron appeared in the US.
 				</figcaption>
 			</figure>
 
@@ -84,15 +85,15 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>Since it was difficult to add a numeric axis in the original visualization, I decided to create a more traditional line graph. I placed the months on the x-axis and drew each year as a separate line to keep the easy comparison between different years. </li>
+				<li>I used different colors for 2020 and 2021 and tried to make 2022 thicker to draw attention. However since it's such a small portion of the first month, it still ends up on the far left and de-emphasized. The sharp increase starting in mid-December is split up now, making it harder to communicate.</li>
+				<li>This visualization makes it easier to compare new cases at different points in a year (ex: April and October) since they now share a common baseline.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="A3Sketch2.jpeg" alt="" width="1000"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    The monthly averages for new Covid-19 cases are shown in concentric circles based on magnitude and year.
 				</figcaption>
 			</figure>
 
@@ -101,9 +102,10 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>With the goal of helping viewers see trends between months more easily, I decided to focus on monthly averages rather than graphing values for each day.</li>
+				<li>The larger area of the dotted January 2022 circle helps draw attention to it, although its continuity with December 2021 is still broken.</li>
+				<li>I placed a numeric label under some months with the highest monthly average, and denoted which year the label corresponds to through color.</li>
+                <li>The circles got in the way of the month labels; perhaps moving all the month labels to the bottom would prevent this without making the visualization unclear, since there is lots of spacing between the circles.</li>
 			</ul>
 		</section>
 
@@ -111,9 +113,9 @@
 			<h2>Final Visualization Design</h2>
       
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="A3Final.jpeg" width="600" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+                    The daily average of new confirmed Covid-19 cases are plotted in this line graph, with each year in a different color. The line thickness encodes the average number of new tests each day.
 				</figcaption>
 			</figure>
 
@@ -123,14 +125,22 @@
 			<h2>Design Process & Design Decisions</h2>
 
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
-      </p>
+                I built off the multi-line graph from my second sketch, since I thought that format allowed users to compare within a year and across years very effectively.
+                On the y-axis, I used the average daily new confirmed cases, since I felt that would be a more concrete measure compared to a sum. I wanted to highlight the extreme spike in January 2022, so I didn't use any other transforms.
+                To highlight the 2022 line, I chose red for it. The 2020 and 2021 lines became blue and green to help the red stand out. 
+                I was also interested in using the new daily tests data and highlighting how very few Covid tests were being adminstered despite the huge Omicron spike in January 2022. I encoded the average daily new Covid tests in the line thickness, which also helped with time continuity since viewers can connect the thick blue December line with the thick green January line.
+                Although my visualization highlights the testing and spread of Covid, it does not include any data on recovery or death rates. One of the main questions around Omicron was its lower severity, and if this would help avoid overwhelming hospitals despite the variant being more contagious.
+            </p>
 
-      <h3>Reflection</h3>
+            <h3>Reflection</h3>
 
-      <p>
-        WRITE YOUR FINAL REFLECTION HERE.
-      </p>
+            <p>
+                My main complaint in Step 2 was not having any numeric labels to understand how many new cases were occuring, and how different months compare against each other. My final visualization addresses these complaints by removing the spiral baseline and going back to a traditional x-axis.
+                However, the original visualization was able to easily compare the same month across different years while flowing smoothly from 2020 to 2022, while viewers switch from my graph's right side to the left when they want to analyze trends from late 2020 into 2021, or late 2021 into 2022.
+                Even though I decided to use line thickness to somewhat connect different years, it is still not intuitive due to the color switch. I found it challenging to balance representing the flow of time with allowing more concrete comparisons between different months.
+                This process of redesign gave me a deeper appreciation for the original visualization's "user experience". I felt like I was watching the pandemic unfold as I moved along the spiral even though I wasn't reading any numbers or data. In trying to provide the details and numbers, I wasn't able to provide that experience and the broader overview of the pandemic.
+                I realized that even though data visualizations are focusing on presenting data, they don't always need to have clear numbers and axis labels. Sometimes less information is more, and can have a greater impact on the viewer.
+            </p>
 		</section>
 	</main>
 </body>
