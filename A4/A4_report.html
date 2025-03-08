@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 4</small>
+			Persuasive or Deceptive Visualization?
+		</h1>
+
+		<p>
+			<strong>Hilary Zen</strong> — <em>hzen@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+    <h2>Proposition: The introduction of body-worn cameras to the NYPD, which began in April 2017, has increased police accountability.</h2>
+
+		<section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+				<img src="ForVisualization.png" alt="" width="600" />
+				<figcaption>
+					This visualization tracks the number of decisions that the NYPD's Civilian Complaint Review Board (CCRB) makes, across the most recent five years of the dataset. 
+					The board categorizes complaints as substantiated when the alleged conduct occurred and violated officer rules, exonerated when the alleged conduct occurred but didn't violate any rules, and unsubstantiated when the board cannot determine that the conduct occured and it broke the rules.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>The large decrease in unsubstantiated complaints is the best evidence that supports my proposition, so I decided to highlight this in red to draw the viewer's attention towards it. I would score this a -0.5, since the orange and blue are also contrasting and eye-catching, and I did not adjust those colors to make them blend into each other. However, the red unsubstantiated line stands out because of the color and separation from the other two categories.</li>
+				<li>I added two annotations to provide important information about the NYPD's body-worn camera program. However, I decided to place the first note about the start of the body cam rollout at the peak of the unsubstantiated complaints count. The second note about the rollout's completion in 2019 points to decreases in all three categories, compared to the previous year. This gets the viewer to start reading towards the top of the visualization, and follow the line graph down to continue reading. Placing the first note beneath all three lines would clear up the visualization and provide more visual space to compare the three decision categories, so I would score this decision as a -1.5.</li>
+				<li>I wanted to focus the visualization on the years 2017 - 2019, the NYPD's body cam rollout period, but ultimately decided to include 2015 and 2016 to give a sense of complaint numbers before body cams. I would score this a 0, since it provides important context for interpreting the more recent complaint numbers and provides mixed support for my proposition. Unsubstantiated claims were steadily high before the introduction of body-worn cameras, but substantiated complaints were already decreasing before 2017 and exonerated complaints have remained about the same across the entire time period.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+				<img src="AgainstVisualization.png" alt="" width="900" />
+				<figcaption>
+					This visualization shows the breakdown of NYPD complaints by type of alleged behavior: abuse of authority (ex: threat of arrest or sexual harassment), discourtesy, force, and/or offensive language. Despite the introduction of body-worn cameras in 2017, the percentage of complaints due to abuse of authority has continued increasing to 77% in 2019.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li>I chose to work with pie charts and percentages to exclude information like the decreasing numbers of complaints, which could be used to support the proposition. This visualization does not include any counts at all, and the size of each year's pie chart is exactly the same, giving the illusion that complaint numbers have remained roughly the same. I would score this as a -2, as it leaves out relevant context that viewers might not think to question.</li>
+				<li>Abuse of authority complaints make up the majority of complaints in all years, so it's very easy to identify the increasing trend. The other types of complaints all make up much smaller percentages of the pie chart and are much harder to identify if they are increasing or decreasing, especially without any labels. I would score this as -1 since it is a deliberate consequence of the format and label choices, and accomplish my goal of drawing viewers to the Abuse of Authority category.</li>
+				<li>Unlike the first figure, I didn't add annotations within the visualization itself and instead provided information about the body-worn camera program within the caption. I felt that any specific placement of the annotations would not be more helpful than the caption, unlike in my first visualization. A more detailed caption could help me keep the space around the pie charts uncluttered, allowing users to see trends more easily and analyze the smaller categories if they wanted to. I would score this decision as a 0, as it may have helped highlight the goal of my visualization but not as strongly as my other decisions described above.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>
+		My proposition had a lot of room for interpretation, particularly about what accountability means and how it should be measured. I had difficulty at first since the most direct measure I could think of, the number of complaints across years, only had strong evidence for the proposition. I also converted officers' ranks at the incident and at the time of dataset creation to numeric values, but wasn't able to get a strong visualization against the proposition. 
+		I eventually pivoted to focusing on complaints related to abuse of authority, a different way to approach police accountability. However, in both visualizations I chose specific versions of the data to present. In my first visualization I presented the raw counts of complaint dispositions rather than presenting the percentage of complaints that were exonerated, which would likely be less favorable for the proposition. In my second visualization, I left out the raw counts in favor of percentages.
+	</p>
+	<p>
+		I find it hard to create more guidelines for “ethical analysis and visualization” beyond not falsifying data or deliberately confusing viewers to obfuscate parts of the data. No dataset, visualization, or annotation can provide the complete picture of a complex issue. Even the fairest visualizations that aim to show both sides of a proposition are picking aspects of the data to include, and there are often no perfect measures.
+		To me, misleading persuasive choices do not add value to the data or improve the visualization through factors like clarity, etc. Instead, they aim to confuse the viewers and get them to miss important parts of the data. For instance, changing an axis to make insignificant changes appear large relies on the user to miss the axis labels. In some fields where these tiny changes are very significant and need to be shown clearly to viewers, I wouldn't consider this misleading. However, if the number of NYPD complaints was in the thousands and my visualization made an increase of 10 complaints into a large spike, that would be trying to convince the viewer of a false narrative.
+	</p>
+    </section>
+	</main>
+</body>
+</html>
